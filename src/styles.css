@@ -1,0 +1,93 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'anton';
+  src: url('./anton.ttf');
+}
+
+#content{
+  display: flex;
+  flex-direction: column;
+  height: 110vh;
+  width: 100%;
+  background-color: #e5e7eb;
+}
+
+#head{
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'anton';
+}
+
+#head p{
+  font-size: 125px;
+  font-family: 'anton';
+}
+
+.game{
+  display: flex;
+  width: auto;
+  height: 100%;
+  justify-content:space-around;
+  margin-top: 35px;
+  padding: 25px;
+  overflow: auto;
+}
+
+.game p{
+  font-family: 'anton';
+  font-size: 50px;
+  text-align: center;
+}
+
+#player, #computer{
+  display: flex;
+  flex-direction: column;
+}
+
+#player-board, #computer-board{
+  margin-top: 60px;
+  display: grid;
+  width: 390px;
+  height: 400px;
+  margin: 20px;
+  border: 1px solid #4b5563;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+}
+
+.player-cells, .computer-cells{
+  border: 1px solid black;
+}
+
+.player-cells{
+  pointer-events: none;
+}
+
+.computer-cells:hover{
+  background-color: #fde68a;
+}
+#info{
+  width: 100%;
+  display: flex;
+  font-size: 18px;
+  justify-content: space-around;
+  font-family: 'anton';
+  margin-top: 30px;
+}
+#info2{
+  width: 100%;
+  display: flex;
+  font-size: 17px;
+  justify-content: center;
+  font-family: 'anton';
+  margin-top: 20px;
+}

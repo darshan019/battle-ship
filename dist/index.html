@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>battleship</title>
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <div id="content">
+    <div id="head">
+      <p>BATTLESHIP</p>
+      <footer>Made by <a href="https://github.com/darshan019">Darshan</a></footer>
+    </div>
+    <div id="info">
+      <span style="display: flex;"><p style="width: 25px; height: 25px; background-color: red; border-radius: 2px; margin-right: 5px;"></p>Enemy ship has been hit</span>
+      <span style="display: flex;"><p style="width: 25px; height: 25px; background-color: gray; border-radius: 2px; margin-right: 5px;"></p>Your ships</span>
+      <span style="display: flex;"><p style="width: 25px; height: 25px; background-color: #93c5fd; border-radius: 2px; margin-right: 5px;"></p>Water</span>
+    </div>
+    <div id="info2">
+      <p>Hit Enemy ships first to see your ships, your ships will change from grey to water on being hit</p>
+    </div>
+    <div class="game">
+      <div id="player">
+        <p id="name">PLAYER</p>
+        <div id="player-board"></div>
+      </div>
+      <div id="computer">
+        <p>ENEMY</p>
+        <div id="computer-board"></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
