@@ -44,9 +44,6 @@ function connectToArr() {
         cell.style.backgroundColor = 'gray';
         if(arr1[cell.dataset.row][cell.dataset.col] === false) cell.style.backgroundColor = 'red';
       }
-      else if(arr1[cell.dataset.row][cell.dataset.col] === false) {
-        cell.style.backgroundColor = '#93c5fd';
-      }
     })
   })
   
@@ -85,10 +82,11 @@ function connectToArr() {
       }
 
       cellsOfPlayer.forEach(cell => {
-        if(arr1[cell.dataset.row][cell.dataset.col] !== null && arr1[cell.dataset.row][cell.dataset.col] !== false) {
+        /*if(arr1[cell.dataset.row][cell.dataset.col] !== null && arr1[cell.dataset.row][cell.dataset.col] !== false) {
           cell.style.backgroundColor = 'gray';
         }
-        else if(arr1[cell.dataset.row][cell.dataset.col] === false) {
+        else */
+        if(arr1[cell.dataset.row][cell.dataset.col] === false) {
           cell.style.backgroundColor = '#93c5fd';
         }
       })
